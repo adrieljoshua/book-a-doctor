@@ -76,31 +76,32 @@ const Register = () => {
       <MDBContainer className="my-5">
 
         <MDBCard style={{ border: 'none' }}>
-          <MDBRow style={{ background: 'rgb(190, 203, 203)' }} className='g-0 border-none p-3'>
+          <MDBRow className='g-0 border-none p-3'>
 
             <MDBCol md='6'>
               <MDBCardBody className='d-flex mx-3 flex-column'>
 
                 <div className='d-flex flex-row mb-2'>
-                  <span className="h1 text-center fw-bold">Sign up to your account</span>
+                  <span style={{color:'#2b8fa8'}}className="h2 text-center fw-bold">Sign up to your account</span>
                 </div>
                 <div className="p-2">
                   <Form onSubmit={handleSubmit} >
-                    <label class="my-1 form-label" for="formControlLg">Full name</label>
+                    <label style={{color:'#2b8fa8'}}className="my-1 form-label" for="formControlLg">Full name</label>
                     <MDBInput style={{ height: '40px' }} name='fullName' value={user.fullName} onChange={handleChange} id='formControlLg' type='text' size="sm" />
                     
-                    <label class="my-1 form-label" for="formControlLg">Email</label>
+                    <label style={{color:'#2b8fa8'}}class="my-1 form-label" for="formControlLg">Email</label>
                     <MDBInput style={{ height: '40px' }} name='email' value={user.email} onChange={handleChange} id='formControlLg' type='email' size="sm" />
                     
-                    <label class="my-1 form-label" for="formControlLg">Password</label>
+                    <label style={{color:'#2b8fa8'}}class="my-1 form-label" for="formControlLg">Password</label>
                     <MDBInput style={{ height: '40px' }} name='password' value={user.password} onChange={handleChange} id='formControlLg' type='password' size="sm" />
                     
-                    <label class="my-1 form-label" for="formControlLg">Phone</label>
+                    <label style={{color:'#2b8fa8'}}class="my-1 form-label" for="formControlLg">Phone</label>
                     <MDBInput style={{ height: '40px' }} name='phone' value={user.phone} onChange={handleChange} id='formControlLg' type='phone' size="sm" />
 
                     <Container className='my-3'>
                       <MDBRadio
                         name='type'
+                        style={{color:'#2b8fa8'}}
                         id='inlineRadio1'
                         checked={user.type === 'admin'}
                         value='admin'
@@ -116,12 +117,13 @@ const Register = () => {
                         onChange={handleChange}
                         label='User'
                         inline
+                        style={{color:'#2b8fa8'}}
                       />
                     </Container>
 
-                    <Button style={{marginTop: '20px'}} className="mb-4 bg-dark" variant='dark' size='lg' type="submit">Register</Button>
+                    <Button style={{marginTop: '20px',background:'#2b8fa8',color:'white',border:'none'}} className="mb-4"  size='lg' type="submit">Register</Button>
                   </Form>
-                  <p className="mb-5 pb-md-2" style={{ color: '#393f81' }}>Have an account? <Link to={'/login'} style={{ color: '#393f81' }}>Login here</Link></p>
+                  <p className="mb-5 pb-md-2" style={{color:'#2b8fa8'}}>Have an account? <Link to={'/login'} style={{color:'#2b8fa8'}}>Login here</Link></p>
 
                 </div>
 

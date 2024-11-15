@@ -32,7 +32,7 @@ const Home = () => {
         </Container>
       </Navbar>
 
-      <div className='home-container'>
+      <div style={{background:'#2b8fa8'}}className='home-container'>
         <div className="left-side">
           <img alt="" src={p3} />
         </div>

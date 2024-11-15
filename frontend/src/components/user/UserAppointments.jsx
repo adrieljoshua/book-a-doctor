@@ -140,7 +140,7 @@ const UserAppointments = () => {
 
         {type === true ? (
           <Table striped bordered hover>
-            <thead>
+            <thead >
               <tr>
                 <th>Name</th>
                 <th>Date of Appointment</th>

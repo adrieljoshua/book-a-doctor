@@ -80,7 +80,7 @@ const UserHome = () => {
                      {/* <div className="menu-items">
                         <CalendarMonthIcon className='icon' /><Link>Home</Link>
                      </div> */}
-                     <div className={`menu-items ${activeMenuItem === 'userappointments' ? 'active' : ''}`} onClick={() => handleMenuItemClick('userappointments')}>
+                     <div style={{color:'white'}}className={`menu-items ${activeMenuItem === 'userappointments' ? 'active' : ''}`} onClick={() => handleMenuItemClick('userappointments')}>
                         <CalendarMonthIcon className='icon' /><Link>Appointments</Link>
                      </div>
                      {userdata.isdoctor === true ? <></> : <div className={`menu-items ${activeMenuItem === 'applyDoctor' ? 'active' : ''}`} onClick={() => handleMenuItemClick('applyDoctor')}>
@@ -105,7 +105,7 @@ const UserHome = () => {
                         <h3>{userdata.fullName}</h3>
                      </div>
                   </div>
-                  <div className="body">
+                  <div  style={{color:'#2b8fa8'}}className="body">
                      {activeMenuItem === 'applyDoctor' && <ApplyDoctor userId={userdata._id} />}
                      {activeMenuItem === 'notification' && <Notification />}
                      {activeMenuItem === 'userappointments' && <UserAppointments />}

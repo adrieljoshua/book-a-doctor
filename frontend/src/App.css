@@ -1,4 +1,4 @@
-@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+ @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 * {
   padding: 0;
@@ -7,14 +7,28 @@
 }
 
 body {
-  background-color: rgb(190, 203, 203);
+  
+  /* background-color: white; */
+  color:white;
+}
+
+nav{
+  font-weight: bold;
+  color:#2b8fa8 ;
 }
 
 a {
-  color: black;
+  color: #18515f;
   text-decoration: none;
   margin-right: 20px;
 }
+.register,btn2{
+  background-color:rgb(206, 220, 223);
+  color: #f7f8f8 !important;
+  border: none;
+  padding: 9px;
+}
+
 
 .App {
   display: flex;
@@ -25,6 +39,7 @@ a {
 .content {
   flex: 1;
 }
+
 
 .home-container {
   max-width: 100vw;
@@ -71,11 +86,11 @@ span {
   font-size: 1.5em;
 }
 
-/************************************************************/
+
 .main {
   padding: 10px;
   height: 92.1vh;
-  /* background-color: aqua; */
+
 }
 
 .layout {
@@ -87,7 +102,7 @@ span {
   height: 88vh;
   width: 17vw;
   border-radius: 5px;
-  background-color: rgb(153, 145, 145);
+  background-color: #2b8fa8;
   box-shadow: 0 0 2px grey;
   margin-right: 20px;
   color: white;
@@ -96,22 +111,24 @@ span {
 .content {
   width: 100%;
   height: 100%;
+  color: white;
 }
 
 .header {
   height: 10vh;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   box-shadow: 0 0 2px grey;
-  background-color: whitesmoke;
+  background-color: rgb(227, 225, 225);
   border-radius: 5px;
 }
 
 .body {
   height: 75vh;
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
   box-shadow: 0 0 2px grey;
-  background-color: whitesmoke;
+  background-color: rgb(227, 225, 225);
   border-radius: 5px;
+  color:#2b8fa8;
 }
 
 .logo h2 {
@@ -124,15 +141,17 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* color:white; */
 }
 
 .menu-items {
   margin-top: 20px;
+  /* color:white; */
 }
 
 .menu-items p {
   text-align: center;
-  color: white;
+  /* color: white; */
   text-decoration: none;
   font-size: 1.3rem;
   cursor: pointer;
@@ -149,7 +168,9 @@ span {
   height: 70px;
   justify-content: flex-start;
   margin: auto 15px;
+  color: #2b8fa8;
 }
+
 
 .notify {
   position: relative;
@@ -167,7 +188,7 @@ sup{
 }
 
 
-/**********************************************/
+
 .box {
   display: flex;
   flex-direction: column;
@@ -235,4 +256,4 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
   background-color: grey;
   border-radius: 10px;
-}
+} 

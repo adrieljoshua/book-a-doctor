@@ -60,7 +60,7 @@ const DoctorList = ({ userDoctorId, doctor, userdata }) => {
    }
    return (
       <>
-         <Card style={{ width: '18rem' }}>
+         <Card style={{ width: '18rem' ,color:'grey'}}>
             <Card.Body>
                <Card.Title>Dr. {doctor.fullName}</Card.Title>
                <Card.Text>
@@ -81,7 +81,7 @@ const DoctorList = ({ userDoctorId, doctor, userdata }) => {
                <Card.Text>
                   <p>Timing: <b>{doctor.timings[0]} : {doctor.timings[1]}</b></p>
                </Card.Text>
-               <Button variant="primary" onClick={handleShow}>
+               <Button style={{background:'#2b8fa8',color:'white',border:'none'}} variant="primary" onClick={handleShow}>
                   Book Now
                </Button>
                <Modal show={show} onHide={handleClose}>
@@ -119,10 +119,10 @@ const DoctorList = ({ userDoctorId, doctor, userdata }) => {
                         </Row>
                      </Modal.Body>
                      <Modal.Footer>
-                        <Button variant="secondary" onClick={handleClose}>
+                        <Button style={{background:'#2b8fa8',color:'white',border:'none'}} variant="secondary" onClick={handleClose}>
                            Close
                         </Button>
-                        <Button type='submit' variant="primary">
+                        <Button type='submit' variant="primary" style={{background:'#2b8fa8',color:'white',border:'none'}}>
                            Book
                         </Button>
                      </Modal.Footer>

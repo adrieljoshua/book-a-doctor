@@ -44,9 +44,9 @@ function ApplyDoctor({ userId }) {
 
    return (
       <Container>
-         <h2 className='text-center p-3'>Apply for Doctor</h2>
+         <h2 style={{color:'#2b8fa8'}}className='text-center p-3'>Apply for Doctor</h2>
          <Form onFinish={handleSubmit} className='m-3'>
-            <h4>Personal Details:</h4>
+            <h4 style={{color:'#2b8fa8'}}>Personal Details:</h4>
             <Row gutter={20}>
                <Col xs={24} md={12} lg={8}>
                   <Form.Item label="Full Name" required>
@@ -69,10 +69,10 @@ function ApplyDoctor({ userId }) {
                   </Form.Item>
                </Col>
             </Row>
-            <h4>Professional Details:</h4>
+            <h4 style={{color:'#2b8fa8'}}>Professional Details:</h4>
             <Row gutter={20}>
                <Col xs={24} md={12} lg={8}>
-                  <Form.Item label="Specialization" required>
+                  <Form.Item label="Specialization" style={{color:'#2b8fa8'}} required>
                      <Input value={doctor.specialization} onChange={handleChange} type='text' name='specialization' placeholder='Your specialization' />
                   </Form.Item>
                </Col>
@@ -93,7 +93,7 @@ function ApplyDoctor({ userId }) {
                </Col>
             </Row>
             <div className="d-flex justify-content-end">
-               <button className="btn btn-primary" type="submit">Submit</button>
+               <button style={{background:'#2b8fa8',border:'none'}} className="btn btn-primary" type="submit">Submit</button>
             </div>
          </Form>
       </Container>
