@@ -12,7 +12,7 @@ const Home = () => {
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container fluid>
           <Navbar.Brand>
-            <Link to={'/'}>MediCareBook</Link>
+            <Link to={'/'}>BookMyDoctor</Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -47,10 +47,10 @@ const Home = () => {
       </div>
 
 
-      <Container>
+      <Container style={{background:'#2b8fa8'}}className='home-ctn'>
         <h1 className='text-center mb-4'>About Us</h1>
         <div className="right-side">
-          <p>
+          <p className='abt-us'>
             Booking a doctor appointment has never been easier. With our convenient online platform, you can quickly and effortlessly schedule your appointments from the comfort of your own home. No more waiting on hold or playing phone tag with busy receptionists.
 
             Our user-friendly interface allows you to browse through a wide range of doctors and healthcare providers, making it simple to find the perfect match for your needs. Whether you require a routine check-up, specialist consultation, or urgent care, we have a diverse network of medical professionals ready to serve you.

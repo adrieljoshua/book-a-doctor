@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { message } from 'antd'
-import p2 from '../../images/p2.png'
+import doc4 from '../../images/doc4.webp'
 import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import {
@@ -52,7 +52,7 @@ const Register = () => {
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container fluid>
           <Navbar.Brand>
-            <Link to={'/'}>MediCareBook</Link>
+            <Link to={'/'}>BookMyDoctor</Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -131,7 +131,7 @@ const Register = () => {
             </MDBCol>
 
             <MDBCol md='6'>
-              <MDBCardImage style={{ mixBlendMode: 'darken' }} src={p2} alt="login form" className='rounded-start w-100' />
+              <MDBCardImage style={{ mixBlendMode: 'darken' }} src={doc4} alt="login form" className='rounded-start w-100' />
             </MDBCol>
 
           </MDBRow>

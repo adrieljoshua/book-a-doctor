@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { message } from 'antd';
 import { Button, Form } from 'react-bootstrap';
 import photo1 from '../../images/photo1.png'
+import doc2 from '../../images/doc2.webp';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import {
@@ -68,7 +69,7 @@ const Login = () => {
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container fluid>
           <Navbar.Brand>
-            <Link to={'/'}>MediCareBook</Link>
+            <Link to={'/'}>BookMyDoctor</Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -96,7 +97,7 @@ const Login = () => {
     
 
             <MDBCol md='6'>
-              <MDBCardImage src={photo1} alt="login form" className='rounded-start w-100' />
+              <MDBCardImage src={doc2} alt="login form" className='rounded-start w-100' />
             </MDBCol>
 
             <MDBCol md='6'>

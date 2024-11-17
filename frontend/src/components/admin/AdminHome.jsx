@@ -57,7 +57,7 @@ const AdminHome = () => {
             <div className="layout">
                <div className="sidebar" >
                   <div className="logo">
-                     <h2>MediCareBook</h2>
+                     <h2>BookMyDoctor</h2>
                   </div>
                   <div className="menu">
                      <div className={`menu-items ${activeMenuItem === 'adminusers' ? 'active' : ''}`} onClick={() => handleMenuItemClick('adminusers')}>

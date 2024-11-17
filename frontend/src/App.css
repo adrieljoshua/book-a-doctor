@@ -8,7 +8,7 @@
 
 body {
   
-  /* background-color: white; */
+  /* background-color:#2b8fa8; */
   color:white;
 }
 
@@ -46,7 +46,15 @@ a {
   height: 100vh;
   display: flex;
 }
+.home-ctn{
+  max-width: 100vw;
+  max-height: 100vh;
+}
+.abt-us{
+  max-width: 1200px;
+  margin: 0 auto;
 
+}
 .left-side,
 .right-side {
   flex: 1;
@@ -55,6 +63,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #2b8fa8;
 
 }
 
